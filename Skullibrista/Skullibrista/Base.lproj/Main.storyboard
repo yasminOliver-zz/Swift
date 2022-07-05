@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="ipad10_5" orientation="portrait" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Skullibrista" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="street" translatesAutoresizingMaskIntoConstraints="NO" id="yxy-9I-rqN">
+                                <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="player0" translatesAutoresizingMaskIntoConstraints="NO" id="6wi-Qg-udm">
+                                <rect key="frame" x="347" y="426" width="140" height="280"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="6wi-Qg-udm" secondAttribute="height" multiplier="1:2" id="Cco-uv-YuH"/>
+                                    <constraint firstAttribute="width" constant="140" id="khX-he-GLn"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sun" translatesAutoresizingMaskIntoConstraints="NO" id="Cqq-sK-H4u">
+                                <rect key="frame" x="0.0" y="20" width="834" height="185"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Cqq-sK-H4u" secondAttribute="height" multiplier="1029:228" id="fm1-Wt-oya"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Você precisa se equilibrar girando o celular. Se a caveira sair da área delimitada, é GAME OVER!" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E1E-9C-a4h" userLabel="Você precisa se equilibrar girando o celular. Se a caveira sair da área delimitada, é GAME OVER!">
+                                <rect key="frame" x="36" y="40" width="762" height="57.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AJ6-Dw-hZY">
+                                <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gameOver" translatesAutoresizingMaskIntoConstraints="NO" id="Fw1-tB-Jlk">
+                                        <rect key="frame" x="117.5" y="28" width="599" height="445.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="599" id="B9C-vk-wmc"/>
+                                            <constraint firstAttribute="width" secondItem="Fw1-tB-Jlk" secondAttribute="height" multiplier="452:336" id="F5t-3o-8oZ"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8qX-HU-GWw">
+                                        <rect key="frame" x="260" y="934.5" width="314" height="43"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="playAgain"/>
+                                        <connections>
+                                            <action selector="playAgain:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kh9-ul-5wr"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Você jogou durante X segundos" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VML-iK-sje">
+                                        <rect key="frame" x="168" y="634" width="498" height="140"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="140" id="ltW-gW-jRN"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="31"/>
+                                        <color key="textColor" red="1" green="1" blue="0.85098040100000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="VML-iK-sje" firstAttribute="leading" secondItem="AJ6-Dw-hZY" secondAttribute="leading" constant="168" id="4EG-fw-fTg"/>
+                                    <constraint firstItem="8qX-HU-GWw" firstAttribute="centerX" secondItem="AJ6-Dw-hZY" secondAttribute="centerX" id="G6Z-AL-fhk"/>
+                                    <constraint firstItem="Fw1-tB-Jlk" firstAttribute="top" secondItem="AJ6-Dw-hZY" secondAttribute="top" constant="28" id="ZwG-1p-kXs"/>
+                                    <constraint firstItem="8qX-HU-GWw" firstAttribute="top" secondItem="VML-iK-sje" secondAttribute="bottom" constant="160.5" id="cHf-gS-DML"/>
+                                    <constraint firstItem="Fw1-tB-Jlk" firstAttribute="centerX" secondItem="AJ6-Dw-hZY" secondAttribute="centerX" id="gfM-pR-8pm"/>
+                                    <constraint firstItem="8qX-HU-GWw" firstAttribute="centerY" secondItem="AJ6-Dw-hZY" secondAttribute="centerY" constant="400" id="ivA-xL-e0W"/>
+                                    <constraint firstAttribute="trailing" secondItem="VML-iK-sje" secondAttribute="trailing" constant="168" id="kPL-cG-r9X"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.90588235294117647" green="0.95686274509803915" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="AJ6-Dw-hZY" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="7b6-QT-Vsa"/>
+                            <constraint firstItem="E1E-9C-a4h" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="36" id="DqF-y0-XUb"/>
+                            <constraint firstItem="AJ6-Dw-hZY" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="M0c-qO-8TC"/>
+                            <constraint firstItem="6wi-Qg-udm" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="RAL-xd-Ybb"/>
+                            <constraint firstItem="AJ6-Dw-hZY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="YLo-MW-z82"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Cqq-sK-H4u" secondAttribute="trailing" id="YNd-Dr-uyG"/>
+                            <constraint firstItem="AJ6-Dw-hZY" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ajR-tf-jku"/>
+                            <constraint firstItem="Cqq-sK-H4u" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="dM3-df-M5v"/>
+                            <constraint firstItem="6wi-Qg-udm" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="faI-Ec-5B3"/>
+                            <constraint firstItem="Cqq-sK-H4u" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="hRz-Or-0b8"/>
+                            <constraint firstItem="E1E-9C-a4h" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="vjv-HB-p8S"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="E1E-9C-a4h" secondAttribute="trailing" constant="36" id="yze-gl-q3r"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lbInstructions" destination="E1E-9C-a4h" id="eQq-XJ-yKa"/>
+                        <outlet property="lbTimerPlayerd" destination="VML-iK-sje" id="jBg-fD-a9w"/>
+                        <outlet property="player" destination="6wi-Qg-udm" id="jsQ-Qx-oqf"/>
+                        <outlet property="street" destination="yxy-9I-rqN" id="hz9-E9-1Ye"/>
+                        <outlet property="viewGameOver" destination="AJ6-Dw-hZY" id="REH-UN-dnm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="44.60431654676259" y="83.633093525179859"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="gameOver" width="226" height="168"/>
+        <image name="playAgain" width="290" height="29"/>
+        <image name="player0" width="588" height="1176"/>
+        <image name="street" width="1400" height="2800"/>
+        <image name="sun" width="1029" height="228"/>
+    </resources>
+</document>
